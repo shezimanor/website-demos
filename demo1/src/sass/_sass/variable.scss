@@ -1,0 +1,33 @@
+@import './color';
+// mixin
+@mixin scrollbar-settings {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $white;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $color_gray400;
+    border-radius: 5px;
+    border: 3px solid $white;
+  }
+}
+
+@mixin scrollbar-settings-x {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    height: 9px;
+  }
+  &::-webkit-scrollbar-track {
+    background: $white;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $color_gray400;
+    border-radius: 5px;
+    border: 2px solid $white;
+  }
+}
